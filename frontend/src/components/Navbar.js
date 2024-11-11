@@ -1,5 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import logo from "../assets/ketchup-logo.png";
+import ketchupLogo from "../assets/ketchup-logo.png";
+import goodhubLogo from "../assets/goodhub-logo.png";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -9,12 +10,18 @@ function Navbar() {
       <div className="navbar fixed bg-white z-50">
         <div className="navbar-start"></div>
         <div className="navbar-center">
-          <button className="btn btn-link">
+          <button className="btn btn-link gap-4">
+            <img
+              className="w-auto h-10 md:h-11 object-contain"
+              draggable="false"
+              src={goodhubLogo}
+              alt="goodhub-logo"
+            />
             <img
               className="w-16 h-auto md:w-20 object-contain"
               draggable="false"
-              src={logo}
-              alt="logo"
+              src={ketchupLogo}
+              alt="ketchup-logo"
             />
           </button>
         </div>

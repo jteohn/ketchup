@@ -4,7 +4,8 @@ import async from "../assets/landing/async.svg";
 import ticket from "../assets/landing/ticket.svg";
 import document from "../assets/landing/document.svg";
 import { FaCode, FaRegHandPeace, FaRegFileLines } from "react-icons/fa6";
-import logo from "../assets/ketchup-logo-bottle.png";
+import goodhubLogo from "../assets/goodhub-logo.png";
+import ketchupLogo from "../assets/ketchup-logo-bottle.png";
 import jordan from "../assets/landing/jordan.jpeg";
 import jaelyn from "../assets/landing/jaelyn.jpg";
 import { useNavigate } from "react-router-dom";
@@ -102,12 +103,28 @@ function Landing() {
       {/* Footer section */}
       <footer className="footer footer-center p-10 bg-base-100 text-neutral">
         <div>
-          <img src={logo} alt="logo" className="w-16 h-auto" />
+          <div className="flex flex-row justify-center gap-4">
+            <a
+              href="https://www.goodhubsea.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={goodhubLogo}
+                alt="goodhub-logo"
+                className="w-auto h-8 object-contain"
+              />
+            </a>
+            <img
+              src={ketchupLogo}
+              alt="ketchup-logo"
+              className="w-16 h-auto object-contain"
+            />
+          </div>
           <p className="font-bold">
-            The Ketchup Corner <br />
-            Starting up since 2023.
+            The Ketchup Corner <br />A product from GoodHub SEA team.
           </p>
-          <p>Copyright © 2023 - All right reserved</p>
+          <p>Copyright © 2023 - All rights reserved.</p>
           <div className="mt-4">
             <button className="btn btn-ghost hover:bg-base-100 group transition-all duration-300">
               <a
